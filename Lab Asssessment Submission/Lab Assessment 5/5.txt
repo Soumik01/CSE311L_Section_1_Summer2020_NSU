@@ -1,0 +1,4 @@
+SELECT Manager_Id, MIN(Salary)
+FROM employees1 WHERE Manager_Id IS NOT NULL
+GROUP BY Manager_Id HAVING MIN(Salary) > 6000
+ORDER BY MIN(Salary) DESC;
