@@ -1,0 +1,9 @@
+SELECT e.last_name,
+d.department_name,
+d.location_id,i.city
+FROM employees e, 
+departments d, locations I
+WHERE e.department_id=d.department_id
+AND d.location_id= I.location_id
+And e.commission_pct IS
+NOT NULL;
