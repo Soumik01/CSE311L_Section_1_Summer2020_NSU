@@ -1,0 +1,3 @@
+SELECT job_Id, COUNT(*)
+FROM employees
+GROUP BY job_Id;

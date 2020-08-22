@@ -1,0 +1,2 @@
+SELECT ROUND(MAX(salary),0) "Maximum",ROUND(MIN(Salary),0) "Minimum",ROUND(SUM(Salary),0) "Sum",ROUND(AVG(Salary),0) "Average"
+FROM employees;

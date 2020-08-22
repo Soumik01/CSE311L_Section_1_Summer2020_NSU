@@ -1,0 +1,3 @@
+SELECT Job_Id, ROUND(MAX(Salary),0) "Maximum",ROUND(MIN(Salary),0) "Minimum",ROUND(SUM(Salary),0) "Sum", ROUND(AVG(Salary),0) "Average"
+FROM employees
+GROUP BY Job_Id;
