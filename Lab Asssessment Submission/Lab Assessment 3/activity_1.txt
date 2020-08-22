@@ -1,5 +1,5 @@
 SELECT Last_Name,Job_Id,Hire_Date
 FROM employees
 WHERE Hire_date BETWEEN '1998-02-20' AND '1998-05-01'
-ORDER BY Hire_date DESC
+ORDER BY Hire_date ASC
 

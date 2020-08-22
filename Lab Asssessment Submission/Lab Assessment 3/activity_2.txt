@@ -1,4 +1,4 @@
 SELECT last_name, department_Id
 FROM employees 
-WHERE deparment_Id BETWEEN 20 AND 50
-ORDER last_name DESC
+WHERE deparment_Id IN (20, 50) 
+ORDER by last_name 
