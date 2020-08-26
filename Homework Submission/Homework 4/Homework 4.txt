@@ -1,0 +1,20 @@
+1. SELECT job_id, 
+ROUND(MAX(salary),0) "Maximum", ROUND(MIN(salary),0) "Minimum", ROUND(SUM(salary),0) "Sum", ROUND(AVG(salary),0) "Average" 
+FROM employees GROUP BY job_id
+
+2.SELECT last_name,manager_id, MIN(salary) 
+FROM employees 
+WHERE manager_id IS NOT NULL GROUP BY manager_id HAVING MIN(salary) > 6000 ORDER BY MIN(salary) DESC
+
+3.SELECT DEPT_ID,ROUND(MAX(SALARY))AS "Total Salary",COUNT(EMPLOYEE_ID) 
+FROM EMPLOYEES 
+GROUP BY DEPT_ID
+
+
+4. SELECT first_name,last_name,job_id,COUNT(*) 
+FROM employees 
+GROUP BY job_id
+
+5.SELECT last_name, salary, commission_pct 
+FROM employees 
+WHERE commission_pct IS NOT NULL ORDER BY Salary,commission_pct

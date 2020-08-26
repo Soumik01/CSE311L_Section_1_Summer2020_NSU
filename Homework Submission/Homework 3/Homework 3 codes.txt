@@ -1,0 +1,19 @@
+1.
+SELECT Last_Name, Salary AS 'Daily Salary',Dept_id from employees
+
+2.SELECT last_name||', '||job_id "Employee and Title"
+FROM employees;
+
+
+3.SELECT last_name, job_id, hire_date 
+FROM employees 
+WHERE hire_date BETWEEN '20-Feb-1998' AND '01-May-1998' ORDER BY hire_date;
+
+
+4.SELECT last_name, dept_id , hire_date 
+FROM employees 
+WHERE dept_id IN (20, 50) ORDER BY last_name
+
+5.SELECT last_name, hire_date 
+FROM employees
+ WHERE hire_date LIKE '%94' AND Salary>92000;
