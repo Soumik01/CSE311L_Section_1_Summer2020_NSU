@@ -17,3 +17,8 @@ WHERE dept_id IN (20, 50) ORDER BY last_name
 5.SELECT last_name, hire_date 
 FROM employees
  WHERE hire_date LIKE '%94' AND Salary>92000;
+
+
+select department_name as DNAME, location_id as LOC, SUM(1) as Number_of_People, avg(salary) as AvgSalary 
+from departments,employees 
+group by dname, loc
